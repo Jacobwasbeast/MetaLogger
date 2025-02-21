@@ -1,0 +1,29 @@
+name: Publish NuGet Package
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Restore Dependencies
+        run: dotnet restore
+
+      - name: Build and Pack
+        run: dotnet pack -c Release --no-build
+
+      - name: Publish Package to NuGet
+        env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+        run: dotnet nuget push bin/Release/MetaLogger.*.nupkg --api-key $NUGET_API_KEY --source https://api.nuget.org/v3/index.json
