@@ -4,7 +4,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading;
 
-namespace MetaLogger
+namespace MetaLogging
 {
     /// <summary>
     /// A static logger class to handle application logging with support for debug mode,
