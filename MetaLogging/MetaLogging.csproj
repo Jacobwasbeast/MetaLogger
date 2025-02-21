@@ -4,7 +4,7 @@
         <TargetFramework>netstandard2.1</TargetFramework>
         <Nullable>enable</Nullable>
         <PackageId>MetaLogger</PackageId>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <Authors>Jacobwasbeast</Authors>
         <Description>A lightweight logging library supporting both static and instance logging.</Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
