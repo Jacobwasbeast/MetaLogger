@@ -18,15 +18,29 @@ MetaLogger is a lightweight C# logging library that supports both static and ins
 
 ## Installation
 
-1. **Clone the Repository:**
+### Install via NuGet
 
-   ```bash
-   git clone https://github.com/Jacobwasbeast/MetaLogger.git
-   ```
+You can install MetaLogger from NuGet:
 
-2. **Include in Your Project:**
+```bash
+Install-Package MetaLogger
+```
 
-   Add the MetaLogger project or its source files to your solution. Then add a reference from your main project to the MetaLogger project.
+Or via the .NET CLI:
+
+```bash
+dotnet add package MetaLogger
+```
+
+### Clone the Repository (Alternative Installation)
+
+```bash
+git clone https://github.com/Jacobwasbeast/MetaLogger.git
+```
+
+### Include in Your Project
+
+Add the MetaLogger project or its source files to your solution. Then add a reference from your main project to the MetaLogger project.
 
 ## Basic Setup
 
@@ -152,4 +166,4 @@ Both loggers offer similar configuration settings:
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE.md).
